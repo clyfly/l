@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/clyfly/wibu-kernel.git -b rad-perf kernel
+git clone https://github.com/cly-build/Kernel.git -b rad kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -125,7 +125,7 @@ LINUXVER=$(make kernelversion)
 COMMIT_HEAD=$(git log --oneline -1)
 
 # Set Date
-DATE=$(TZ=Asia/Kolkata date +"%Y-%m-%d")
+DATE=$(TZ=Asia/Jakarta date +"%Y-%m-%d")
 
 #Now Its time for other stuffs like cloning, exporting, etc
 
@@ -163,7 +163,7 @@ DATE=$(TZ=Asia/Kolkata date +"%Y-%m-%d")
 		AK_DIR=$KERNEL_DIR/Anykernel3
 
 	    msg "|| Cloning Anykernel ||"
-        git clone https://github.com/divyam234/AnyKernel3.git -b main $KERNEL_DIR/Anykernel3
+        git clone https://github.com/clyfly/AnyKernel3.git -b master $KERNEL_DIR/Anykernel3
 
 	if [ $BUILD_DTBO = 1 ]
 	then
@@ -186,7 +186,7 @@ setversioning() {
 ##--------------------------------------------------------------##
 
 exports() {
-	export KBUILD_BUILD_USER="Redux"
+	export KBUILD_BUILD_USER="Rad"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
