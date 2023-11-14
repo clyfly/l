@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/clyfly/rad-r-vendor.git -b rad-perf kernel
+git clone https://github.com/clyfly/wibu-kernel.git -b rad-perf kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
