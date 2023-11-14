@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/divyam234/android_kernel_asus_sdm660 -b eleven kernel
+git clone https://github.com/clyfly/rad-r-vendor.git -b rad-perf kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -42,17 +42,17 @@ KERNEL_DIR=$(pwd)/kernel
 cd $KERNEL_DIR
 
 # The name of the device for which the kernel is built
-MODEL="Asus Zenfone Max Pro M2"
+MODEL="Redmi Note 10s"
 
 # The codename of the device
-DEVICE="X01BD"
+DEVICE="rosemary"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=X01BD_defconfig
+DEFCONFIG=rosemary_defconfig
 
 # Show manufacturer info
-MANUFACTURERINFO="ASUSTek Computer Inc."
+MANUFACTURERINFO="Xiaomi."
 
 # Kernel Variant
 VARIANT=perf
@@ -65,7 +65,7 @@ BUILD_TYPE="Release"
 COMPILER=clang
 
 # Kernel is LTO
-LTO=0
+LTO=1
 
 # Specify linker.
 # 'ld.lld'(default)
