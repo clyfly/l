@@ -55,10 +55,10 @@ DEFCONFIG=rosemary_defconfig
 MANUFACTURERINFO="Xiaomi."
 
 # Kernel Variant
-VARIANT=perf
+VARIANT=R-Vendor
 
 # Build Type
-BUILD_TYPE="Release"
+BUILD_TYPE="WIP"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
@@ -177,7 +177,7 @@ DATE=$(TZ=Asia/Jakarta date +"%Y-%m-%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="el-kernel-$LINUXVER-$VARIANT-Rosemary-$(TZ=Asia/Jakarta date +"%Y-%m-%d-%s")"
+    KERNELNAME="rad-kernel-$LINUXVER-$VARIANT-Rosemary-$(TZ=Asia/Jakarta date +"%Y-%m-%d-%s")"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
