@@ -177,7 +177,7 @@ DATE=$(TZ=Asia/Kolkata date +"%Y-%m-%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="Redux-$LINUXVER-$VARIANT-X01BD-$(TZ=Asia/Kolkata date +"%Y-%m-%d-%s")"
+    KERNELNAME="el-kernel-$LINUXVER-$VARIANT-Rosemary-$(TZ=Asia/Jakarta date +"%Y-%m-%d-%s")"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
