@@ -308,7 +308,7 @@ build_kernel() {
 
 	if [ "$PTTG" = 1 ]
  	then
-            tg_post_msg "<b>🔨 Redux Kernel Build Triggered</b>
+            tg_post_msg "<b>🔨 Radinka Kernel Build Triggered</b>
 <b>Host Core Count : </b><code>$PROCS</code>
 <b>Device: </b><code>$MODEL</code>
 <b>Codename: </b><code>$DEVICE</code>
@@ -415,7 +415,7 @@ gen_zip() {
 	cd $AK_DIR
 	#cp -af "$KERNEL_DIR"/init.ElectroSpectrum.rc init.spectrum.rc && sed -i "s/persist.spectrum.kernel.*/persist.spectrum.kernel ElectroPerf-LTO-$VARIANT-v2.3/g" init.spectrum.rc
     cp -af anykernel-real.sh anykernel.sh
-	sed -i "s/kernel.string=.*/kernel.string=Redux-CAF-STABLE/g" anykernel.sh
+	sed -i "s/kernel.string=.*/kernel.string=RadKernel-[Your Waifu]/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$VARIANT/g" anykernel.sh
 	sed -i "s/kernel.compiler=.*/kernel.compiler=proton-clang/g" anykernel.sh
 	sed -i "s/kernel.made=.*/kernel.made=Bounty Hunter/g" anykernel.sh
