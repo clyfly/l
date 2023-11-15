@@ -1,5 +1,4 @@
-name: Android Kernel Build
-on:
+name: Rad Kernel Builder
   workflow_dispatch:
 
 jobs:
