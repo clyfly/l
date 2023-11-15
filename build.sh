@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/clyfly/wibu-kernel.git -b rad-perf kernel
+git https://github.com/silont-project/kernel_xiaomi_rosemary.git -b saponaria kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
