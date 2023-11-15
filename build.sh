@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git https://github.com/clyfly/kernel_xiaomi_rosemary -b R kernel
+git clone https://github.com/clyfly/kernel_xiaomi_rosemary -b R kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
