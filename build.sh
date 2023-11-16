@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/clyfly/kernel_xiaomi_rosemary -b R kernel
+git clone https://github.com/clyfly/rad-r-vendor2.git -b lineage-20 kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -55,7 +55,7 @@ DEFCONFIG=rosemary_defconfig
 MANUFACTURERINFO="Xiaomi."
 
 # Kernel Variant
-VARIANT=S-Vendor
+VARIANT=rvendor
 
 # Build Type
 BUILD_TYPE="WIP"
