@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/clyfly/rad-r-vendor2.git -b lineage-20 kernel
+git https://github.com/cly-build/rosemary-r-kernel.git -b rad kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
