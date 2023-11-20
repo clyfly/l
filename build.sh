@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git https://github.com/cly-build/rosemary-r-kernel.git -b rad kernel
+git https://github.com/cly-build/kernel_xiaomi_rosemary.gitt -b rad kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -55,17 +55,17 @@ DEFCONFIG=rosemary_defconfig
 MANUFACTURERINFO="Xiaomi."
 
 # Kernel Variant
-VARIANT=rvendor
+VARIANT=stable
 
 # Build Type
-BUILD_TYPE="WIP"
+BUILD_TYPE="rad"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
-COMPILER=clang
+COMPILER=clangxgcc
 
 # Kernel is LTO
-LTO=1
+LTO=0
 
 # Specify linker.
 # 'ld.lld'(default)
@@ -177,7 +177,7 @@ DATE=$(TZ=Asia/Jakarta date +"%Y-%m-%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="rad-kernel-$LINUXVER-$VARIANT-Rosemary-$(TZ=Asia/Jakarta date +"%Y-%m-%d-%s")"
+    KERNELNAME="-Focalors[stable]-$LINUXVER-$VARIANT-Rosemary-$(TZ=Asia/Jakarta date +"%Y-%m-%d-%s")"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
