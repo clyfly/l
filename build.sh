@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/cly-build/kernel_xiaomi_rosemary.git -b rad kernel
+git clone https://github.com/Kyvangka1610/android_kernel_xiaomi_ginkgo.git -b LA.UM.9.1.r1-08100-SMxxx0.0 kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -42,14 +42,14 @@ KERNEL_DIR=$(pwd)/kernel
 cd $KERNEL_DIR
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 10s"
+MODEL="Redmo Note 8 pro"
 
 # The codename of the device
-DEVICE="rosemary"
+DEVICE="Ginkgo"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=rosemary_defconfig
+DEFCONFIG=sixteen_defconfig
 
 # Show manufacturer info
 MANUFACTURERINFO="Xiaomi."
@@ -58,7 +58,7 @@ MANUFACTURERINFO="Xiaomi."
 VARIANT=stable
 
 # Build Type
-BUILD_TYPE="rad"
+BUILD_TYPE="non-ksu"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
