@@ -32,7 +32,7 @@ installDependencies
 
 ## clone Kernel
 echo "Cloning Kernel"
-git clone https://github.com/Kyvangka1610/android_kernel_xiaomi_ginkgo.git -b LA.UM.9.1.r1-08100-SMxxx0.0 kernel
+git clone https://github.com/Genom-Project/android_kernel_xiaomi_ginkgo.git -b sdm-10 kernel
 
 ##------------------------------------------------------##
 ##----------Basic Informations, COMPULSORY--------------##
@@ -49,7 +49,7 @@ DEVICE="Ginkgo"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=sixteen_defconfig
+DEFCONFIG=genom_defconfig
 
 # Show manufacturer info
 MANUFACTURERINFO="Xiaomi."
