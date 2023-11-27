@@ -393,7 +393,7 @@ build_kernel() {
  			then
 				tg_post_msg "<b>❌Error! Compilaton failed: Kernel Image missing</b>
 <b>Build Date: </b><code>$DATE</code>
-<b>Kernel Name: </b><code>Redux-$VARIANT-$DEVICE</code>
+<b>Kernel Name: </b><code>Radinka-$VARIANT-$DEVICE</code>
 <b>Linux Tag Version: </b><code>$LINUXVER</code>
 <b>Time Taken: </b><code>$((DIFF / 60)) minute(s) $((DIFF % 60)) second(s)</code>"
 
