@@ -42,7 +42,7 @@ KERNEL_DIR=$(pwd)/kernel
 cd $KERNEL_DIR
 
 # The name of the device for which the kernel is built
-MODEL="Redmo Note 8 pro"
+MODEL="Redmo Note 8"
 
 # The codename of the device
 DEVICE="Ginkgo"
